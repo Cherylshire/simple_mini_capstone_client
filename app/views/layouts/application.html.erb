@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SimpleMiniCapstoneClient</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+  </head>
+
+  <body>
+    <a href="/client/products">Home</a>
+    <a href="/client/products/new">New</a>
+    <%= yield %>    
+  </body>
+</html>

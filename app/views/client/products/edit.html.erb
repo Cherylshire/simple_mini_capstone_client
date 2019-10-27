@@ -1,0 +1,24 @@
+<h1>Edit Products</h1>
+<%= form_tag "/client/products/#{@id}/edit", method: :patch do %>
+<div>
+  Name: <input type="text" name= "name" value = <%= @recipe['name'] %>>
+</div>
+<div>
+  Price: <input type="text" name= "price" value = <%= @recipe['price'] %>>
+</div>
+<div>
+  Description: <input type="text" name= "description" value = <%= @recipe['description'] %>>
+</div>
+<div>
+  Image_url: <input type="text" name= "image_url" value = <%= @recipe['image_url'] %>>
+</div>
+<div>
+  Subtotal: <input type="text" name= "subtotal" value = <%= @recipe['subtotal'] %>>
+</div>
+<div>
+  Tax: <input type="text" name= "tax" value = <%= @recipe['tax'] %>>
+</div>
+<div>
+  Total: <input type="text" name= "total" value = <%= @recipe['total'] %>>
+</div>
+<% end %>

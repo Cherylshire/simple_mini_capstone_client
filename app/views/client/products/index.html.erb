@@ -1,0 +1,8 @@
+<h1>Products List</h1>
+<% @products.each do |product| %>
+  <h2><a href="">Name: <%= product["name"] %></a></h2>
+  <h4>Description: <%= product["description"] %></h4>
+  <h4>Price: <%= product["price"] %></h4>
+  <br>
+  <br>
+  <% end %>

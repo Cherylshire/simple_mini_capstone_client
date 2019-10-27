@@ -1,0 +1,21 @@
+<h1>New Products</h1>
+<%= form_tag "/client/products", method: :post do %>
+
+  <form action="/client/products" method="post">
+    <div>
+      Name: <input type="text" name="Name">
+    </div>
+    <div>
+      Desctiption: <input type="text" name="Desctiption">
+    </div>
+    <div>
+      Price: <input type= "text" name="Price">
+    </div>
+    <div>
+      Image_url: <input type= "text" name="image_url">
+    </div>
+    <div>
+      <input type="submitt" value= "Create Recipe">
+    </div>
+  </form>
+<% end %>
